@@ -1,0 +1,32 @@
+{
+    "name": "openmusic-consumer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon ./src/consumer",
+        "start": "NODE_ENV=production node ./src/consumer",
+        "prepare": "husky install",
+        "format-all": "prettier --write .",
+        "check-format": "prettier --check .",
+        "check-lint": "eslint . --ext ts --ext tsx --ext js",
+        "migrate": "node-pg-migrate"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "amqplib": "^0.10.3",
+        "dotenv": "^16.0.3",
+        "nodemailer": "^6.8.0",
+        "pg": "^8.8.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.24.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.7.1"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["google", "prettier", "plugin:import/errors"],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-undef": "error",
+        "require-jsdoc": "off",
+        "import/no-unresolved": [2, { "commonjs": true, "amd": true }]
+    }
+}
